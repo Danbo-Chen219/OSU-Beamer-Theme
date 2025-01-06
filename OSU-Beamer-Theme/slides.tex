@@ -1,0 +1,116 @@
+\documentclass{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{svg}
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+\usecolortheme{beaver}
+
+\author{Danbo Chen}
+\title{This is the OSU Beamer Theme}
+% \subtitle{Paper1: SafeSec Tropos: Joint security and safety requirements elicitation}
+\institute{AEDE}
+\date{\today}
+\usepackage{osu}
+
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{red!20!green!20!blue!20},
+    frame=shadowbox,
+}
+
+
+\begin{document}
+
+
+\begin{frame}
+    \titlepage
+    \begin{figure}[htbp]
+       \raggedleft % Aligns the image to the right
+        \vspace{1.5cm} % Adjust vertical space to move the image to the bottom
+        \includegraphics[scale=0.2]{pic/LOGO.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+
+\section{Background}
+
+\begin{frame}{How to be a PhD?}
+    \begin{itemize}[<+-| alert@+>] % except for alert， \pause is also fine as well
+        \item Submit application
+        \item Get Qualifier pass
+    \end{itemize}
+\end{frame}
+
+
+\section{Literature Review}
+
+\subsection{Topic 1}
+
+\begin{frame}
+    \begin{itemize}
+        \item This template from \newline \url{https://www.latexstudio.net/archives/4051.html}
+        \item there some ppts template for reference: \href{https://github.com/Trinkle23897/oi_slides}{\color{purple}{click me}}
+    \end{itemize}
+\end{frame}
+
+
+\section{Theory Hypothesis}
+
+\subsection{Hypothesis 1:}
+
+\begin{frame}{Beamer Theme}
+    \begin{itemize}
+        \item For more features of this template, please refer to: \url{https://www.latexstudio.net/archives/4051.html}
+        \item and \url{https://tuna.moe/event/2018/latex/}
+    \end{itemize}
+\end{frame}
+
+\subsection{Hypothesis 2:}
+\section{Methodology}
+\begin{frame}
+    \begin{itemize}
+        \item STEP 1:
+        \item STEP 2:
+        \item STEP 3:
+        \item STEP 4:
+    \end{itemize}
+\end{frame}
+
+\section{Results and Discussion}
+
+\begin{frame}[allowframebreaks]
+    \bibliography{ref}
+    \bibliographystyle{alpha}
+    % you can adjust the font as follow：
+    % \tiny\bibliographystyle{alpha}
+\end{frame}
+
+ 
+\begin{frame}
+    \begin{center}
+        {\Huge \textsf{Thanks for your time!} }
+    \end{center}
+\end{frame}
+
+\end{document}
